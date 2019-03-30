@@ -1,3 +1,18 @@
+.RightDiv {
+    margin-top: 22%; 
+    margin-right: 10%;
+ }
+ .LeftDiv{
+    
+     margin-top: 17%;
+     margin-left: 15%;
+     margin-right: 8%;
+     font-size: 150%;
+ }
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
 .LoginTitle {
     margin-bottom: 20px;
 }
