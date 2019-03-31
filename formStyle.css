@@ -26,7 +26,10 @@
 .MyFormText:focus {
     border-bottom: 2px solid #159ae7;
 }
-#SmallTextBox {
+#FirstName {
+    width: 150px;
+}
+#LastName {
     width: 150px;
 }
 #Question {
