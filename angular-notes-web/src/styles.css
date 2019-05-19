@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+header{
+    /*min-height: 50% !important;*/
+    /*padding: 5%;*/
+    height: 85px;
+    background-color: #007bff;
+}
+footer{
+    /*min-height: 50% !important;*/
+    /*padding: 5%;*/
+    height: 85px;
+    background-color: #007bff;
+}

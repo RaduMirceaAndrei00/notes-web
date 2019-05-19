@@ -1,0 +1,13 @@
+header{
+    /*min-height: 50% !important;*/
+    height: 85px;
+    /*padding: 5%;*/
+    background-color: #007bff;
+}
+button{
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    background-color: #007bff;
+    border: 0; 
+}
