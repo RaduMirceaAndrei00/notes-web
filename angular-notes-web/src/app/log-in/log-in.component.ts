@@ -22,10 +22,10 @@ export class LogInComponent implements OnInit {
     private _router: Router
   ) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   async login () {
+    console.log(this.profileForm.value);
     try {
       if (!this.profileForm.valid) return;
       const result: any = await this._regiser.authenticate(this.profileForm.value).toPromise();
