@@ -4,7 +4,7 @@
       <h1 class="mt-3">Autentificati-va pe BestNotes!</h1>
       <form class="my-5" [formGroup]="profileForm" (submit)="login()">
           <div class="form-group"> 
-            <label for="emial">Adresa de mail:</label>
+            <label for="email">Adresa de mail:</label>
             <input class="form-control" type="email" name="email" formControlName="email" required>
           </div>
           
@@ -17,6 +17,8 @@
           <div *ngIf="resultMessage" class="alert">{{resultMessage}}</div>
       </form>
       <a routerLink="/signin">Nu ai un cont pe BestNotes? Inregistreaza-te aici!</a>
+      <br/>
+      <a routerLink="/forgotPassword">Ti-ai uitat parola? Da click aici!</a>
     </div>
   </div>
 </main>

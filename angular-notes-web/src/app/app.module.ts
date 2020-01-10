@@ -9,7 +9,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NotesListComponent } from './notes-list/notes-list.component';
-import { HeaderComponent } from './header/header.component'; 
+import { HeaderComponent } from './header/header.component';
+import { ActivateComponent } from './activate/activate.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ChangePasswordComponent } from './change-password/change-password.component'; 
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { HeaderComponent } from './header/header.component';
     SignInComponent,
     LogInComponent,
     NotesListComponent,
-    HeaderComponent
+    HeaderComponent,
+    ActivateComponent,
+    ForgotPasswordComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
