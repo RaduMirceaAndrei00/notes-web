@@ -12,7 +12,9 @@ import { NotesListComponent } from './notes-list/notes-list.component';
 import { HeaderComponent } from './header/header.component';
 import { ActivateComponent } from './activate/activate.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { ChangePasswordComponent } from './change-password/change-password.component'; 
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { EditPasswordComponent } from './edit-password/edit-password.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component'; 
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     HeaderComponent,
     ActivateComponent,
     ForgotPasswordComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    EditPasswordComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,

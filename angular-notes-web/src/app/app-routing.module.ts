@@ -7,6 +7,8 @@ import { NotesListComponent } from './notes-list/notes-list.component';
 import { ActivateComponent } from './activate/activate.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { EditPasswordComponent } from './edit-password/edit-password.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 const routes: Routes = [
   { path: 'signin', component: SignInComponent },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'activate', component: ActivateComponent },
   { path: 'forgotPassword', component: ForgotPasswordComponent },
   { path: 'changePassword', component: ChangePasswordComponent },
+  { path: 'editPassword', component: EditPasswordComponent },
+  { path: 'editProfile', component: EditProfileComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 

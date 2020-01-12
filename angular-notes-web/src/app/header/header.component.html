@@ -1,3 +1,6 @@
 <header>
-  <button *ngIf="isLoggedIn()" (click)="logOut()"><img src="../../assets/image/LogOut.png" alt="Log Out"></button>
+  <button id="logout" *ngIf="isLoggedIn()" (click)="logOut()"><img src="../../assets/image/LogOut.png" alt="Log Out"></button>
+  <button id="notes" *ngIf="isLoggedIn()" (click)="notes()">Notite</button>
+  <button id="password" *ngIf="isLoggedIn()" (click)="password()">Parola</button>
+  <button id="profile" *ngIf="isLoggedIn()" (click)="profile()">Profil</button>
 </header>

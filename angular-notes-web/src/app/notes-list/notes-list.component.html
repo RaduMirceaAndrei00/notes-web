@@ -12,7 +12,7 @@
       <div class="form-group">
         <textarea id="textBox" name="text" cols="100" rows="5" formControlName="text" [(ngModel)]="newNoteText" id="text2" required></textarea>
       </div>
-      <button class="btn btn-primary btn-block" type="submit">Creare Notita</button>
+      <button class="btn btn-primary btn-block" type="submit" [disabled]="!noteForm.valid">Creare Notita</button>
     </form>
   </div>
   <div *ngFor='let note of notes' class="noteDiv">

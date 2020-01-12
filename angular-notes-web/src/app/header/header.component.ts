@@ -23,4 +23,13 @@ export class HeaderComponent implements OnInit {
     this._sessionService.logout();
     this._router.navigateByUrl('/login');
   }
+  notes() {
+    this._router.navigateByUrl('/notes');
+  }
+  password() {
+    this._router.navigateByUrl('/editPassword');
+  }
+  profile() {
+    this._router.navigateByUrl('/editProfile');
+  }
 }
