@@ -52,6 +52,18 @@ export class NoteDetailsComponent implements OnInit {
     }
   }
 
+  async deleteNote() {
+    try {
+      await this._sessionService.jwt$.pipe(switchMap(
+        token => this._note.deleteNote(this.notes_id, token || '')
+      )).subscribe(() => {
+        this._router.navigateByUrl('/notes');
+      })
+    } catch(error) {
+      this.resultMessage = error.payload.message;
+    }
+  }
+
   backToNotes() {
     this._router.navigateByUrl('/notes');
   }

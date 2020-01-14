@@ -50,4 +50,13 @@ export class NoteService {
     })
     .pipe(catchError(err => throwError(err.error)));
   }
+  deleteNote(notes_id: any, token: string) {
+    const url = `http://localhost:8084/notes/` + notes_id;
+    return this._httpClient.delete(url, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    })
+    .pipe(catchError(err => throwError(err.error)));
+  }
 }

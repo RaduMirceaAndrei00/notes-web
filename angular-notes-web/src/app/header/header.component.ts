@@ -19,9 +19,9 @@ export class HeaderComponent implements OnInit {
   isLoggedIn() {
     return this._sessionService.isLoggedIn();
   }
-  logOut() {
-    this._sessionService.logout();
-    this._router.navigateByUrl('/login');
+  async logOut() {
+    await this._sessionService.logout();
+    await this._router.navigateByUrl('/login');
   }
   notes() {
     this._router.navigateByUrl('/notes');
