@@ -30,4 +30,24 @@ export class NoteService {
     .pipe(map((result: any) => result))
     .pipe(catchError(err => throwError(err.error)));
   }
+
+  getNote (notes_id: any, token: string) {
+    const url = `http://localhost:8084/notes/` + notes_id;
+    return this._httpClient.get<any>(url, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    })
+    .pipe(map((result: any) => result))
+    .pipe(catchError(err => throwError(err.error)));
+  }
+  editNote (notes_id: any, params: any, token: string) {
+    const url = `http://localhost:8084/notes/` + notes_id;
+    return this._httpClient.put(url, params, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    })
+    .pipe(catchError(err => throwError(err.error)));
+  }
 }

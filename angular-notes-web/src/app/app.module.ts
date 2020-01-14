@@ -14,7 +14,8 @@ import { ActivateComponent } from './activate/activate.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { EditPasswordComponent } from './edit-password/edit-password.component';
-import { EditProfileComponent } from './edit-profile/edit-profile.component'; 
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { NoteDetailsComponent } from './note-details/note-details.component'; 
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     ForgotPasswordComponent,
     ChangePasswordComponent,
     EditPasswordComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    NoteDetailsComponent
   ],
   imports: [
     BrowserModule,

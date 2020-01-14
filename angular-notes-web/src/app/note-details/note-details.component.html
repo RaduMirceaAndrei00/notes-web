@@ -1,8 +1,8 @@
 <main class="container">
   <div class="row">
-    <form class="my-5" [formGroup]="noteForm" (submit)="createNote()">
+    <form class="my-5" [formGroup]="noteForm" (submit)="editNote()">
       <div class="col-12 col-md-9 col-lg-6 mx-auto">
-        <h3 class="my-3"> Adauga notita aici:</h3>
+        <h3 class="my-3"> Notita selectata:</h3>
       </div>
       <div class="form-group"> 
         <label for="title">Titlul notitei:</label>
@@ -12,11 +12,9 @@
       <div class="form-group">
         <textarea id="textBox" name="text" cols="100" rows="5" formControlName="text" [(ngModel)]="newNoteText" id="text2" required></textarea>
       </div>
-      <button class="btn btn-primary btn-block" type="submit" [disabled]="!noteForm.valid">Creare Notita</button>
+      <button class="btn btn-primary" type="submit" [disabled]="!noteForm.valid">Editare Notita</button>
+      <button class="btn btn-primary" id="delete" type="button" (click)="deleteNote()">Sterge Notita</button>
+      <button class="btn btn-primary" id="back" type="button" (click)="backToNotes()">Inapoi la notite</button>
     </form>
   </div>
-  <a *ngFor='let note of notes' routerLink='/note/{{note._id}}'><div class="noteDiv">
-    <p><span>Titlu:</span>{{note.title}}</p>
-    <p><span>Text:</span>{{note.text}}</p>
-  </div></a>
 </main>
